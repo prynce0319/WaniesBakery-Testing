@@ -47,7 +47,7 @@
 							<div class="contact-box contact-info">
 								<div class="wrap-map">
 									
-                                    <iframe src="{{ $setting->map }}" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                    <iframe src="{{ $setting->map ?? 'None'}}" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 									{{-- <div class="mercado-google-maps"
 										 id="az-google-maps57341d9e51968"
 										 data-hue=""
