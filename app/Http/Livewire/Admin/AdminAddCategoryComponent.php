@@ -2,7 +2,7 @@
 
 namespace App\Http\Livewire\Admin;
 
-use App\Models\category;
+use App\Models\Category;
 use Livewire\Component;
 use Illuminate\Support\Str;
 
