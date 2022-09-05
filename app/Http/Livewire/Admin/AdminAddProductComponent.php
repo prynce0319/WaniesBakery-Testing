@@ -3,7 +3,7 @@
 namespace App\Http\Livewire\Admin;
 
 use App\Models\AttributeValue;
-use App\Models\category;
+use App\Models\Category;
 use App\Models\Product;
 use App\Models\ProductAttribute;
 use Livewire\WithFileUploads;
