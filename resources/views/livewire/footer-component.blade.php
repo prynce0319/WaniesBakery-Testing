@@ -163,19 +163,19 @@
 							</div>
 						</div>
 
-						{{-- <div class="col-lg-4 col-sm-4 col-md-4 col-xs-12">
+						<div class="col-lg-4 col-sm-4 col-md-4 col-xs-12">
 							<div class="wrap-footer-item">
-								<h3 class="item-header">Dowload App</h3>
+								<h3 class="item-header">Chat with us via Whatsapp</h3>
 								<div class="item-content">
 									<div class="wrap-list-item apps-list">
 										<ul>
-											<li><a href="#" class="link-to-item" title="our application on apple store"><figure><img src="{{asset('assets/images/brands/apple-store.png')}}" alt="apple store" width="128" height="36"></figure></a></li>
-											<li><a href="#" class="link-to-item" title="our application on google play store"><figure><img src="{{asset('assets/images/brands/google-play-store.png')}}" alt="google play store" width="128" height="36"></figure></a></li>
+											<li><a href="https://wa.me/594867002?text=Please%20I%20want%20to%20place%20an%20order." target="_blank" class="link-to-item" title="Chat with us now"><figure><img src="{{asset('assets/images/brands/whatsapp.png')}}" alt="whatsapp" width="128" height="36"></figure></a></li>
+											
 										</ul>
 									</div>
 								</div>
 							</div>
-						</div> --}}
+						</div>
 
 					</div>
 				</div>
