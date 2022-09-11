@@ -9,7 +9,8 @@ class AdminCustomOrderComponent extends Component
 {
     public function render()
     {
-        $customorders = CustomOrder::paginate(10);
+        $customorders = CustomOrder::orderBy('created_at', 'DESC')->paginate(10);
+        
         return view('livewire.admin.admin-custom-order-component',['customorders' => $customorders])->layout('layouts.base');
     }
 }
