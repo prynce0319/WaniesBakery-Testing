@@ -43,7 +43,7 @@
                                         <td>{{ $customorder->flavour }}</td>
                                         <td>{{ $customorder->inscription }}</td>
                                         <td>{{ $customorder->created_at }}</td>
-                                        <td><a href="{{-- {{ route('admin.orderdetails',['order_id'=>$order->id]) }} --}}" class="btn btn-info btn-sm">More Details</td>
+                                        <td><a href="{{ route('admin.customdetails',['custom_id'=>$customorder->id]) }}" class="btn btn-info btn-sm">More Details</td>
                                         
                                     </tr>
                                 @endforeach

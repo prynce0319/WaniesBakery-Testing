@@ -129,7 +129,7 @@
                                             <div class="col-md-4">
                                                 <select class="form-control" wire:model="delivery_type" >
                                                     <option value="Self Pick-up">Self Pick-up</option>
-                                                    <option value="Delivery">Delivery</option>                                                                                                                                                                        
+                                                    <option value="Door Step Delivery">Door Step Delivery</option>                                                                                                                                                                        
                                                 </select>
                                             </div>
                                         </div>
