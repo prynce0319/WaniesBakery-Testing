@@ -141,7 +141,7 @@
                     </div>
                 </div><!-- Categories widget-->
 
-                <div class="widget mercado-widget filter-widget brand-widget">
+                {{-- <div class="widget mercado-widget filter-widget brand-widget">
                     <h2 class="widget-title">Brand</h2>
                     <div class="widget-content">
                         <ul class="list-style vertical-list list-limited" data-show="6">
@@ -158,7 +158,7 @@
                             <li class="list-item"><a data-label='Show less<i class="fa fa-angle-up" aria-hidden="true"></i>' class="btn-control control-show-more" href="#">Show more<i class="fa fa-angle-down" aria-hidden="true"></i></a></li>
                         </ul>
                     </div>
-                </div><!-- brand widget-->
+                </div><!-- brand widget--> --}}
 
                 <div class="widget mercado-widget filter-widget price-filter">
                     <h2 class="widget-title">Price <span class="text-info">₵{{ $min_price }} - ₵{{ $max_price }}</span></h2>
@@ -167,7 +167,7 @@
                     </div>
                 </div><!-- Price-->
 
-                <div class="widget mercado-widget filter-widget">
+                {{-- <div class="widget mercado-widget filter-widget">
                     <h2 class="widget-title">Color</h2>
                     <div class="widget-content">
                         <ul class="list-style vertical-list has-count-index">
@@ -194,7 +194,7 @@
                             <figure><img src="{{asset('assets/images/size-banner-widget.jpg') }}" width="270" height="331" alt=""></figure>
                         </div>
                     </div>
-                </div><!-- Size -->
+                </div><!-- Size --> --}}
 
                 <div class="widget mercado-widget widget-product">
                     <h2 class="widget-title">Popular Products</h2>
