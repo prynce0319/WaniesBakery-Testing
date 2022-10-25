@@ -22,9 +22,9 @@ class AuthAdmin
         }
         else
         {
-            /* session()->flush(); */
-            return $next($request);
-            /* return redirect()->route('login'); */
+            session()->flush(); 
+            /* return $next($request); */
+            return redirect()->route('login'); 
         }
         return $next($request);
     }

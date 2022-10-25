@@ -12,7 +12,7 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Redirect;
 use Livewire\Component;
-use paystack;
+
 
 
 class CheckoutComponent extends Component

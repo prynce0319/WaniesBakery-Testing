@@ -2,7 +2,9 @@
 
 namespace App\Http\Livewire;
 
+use App\Mail\CustomOrderMail;
 use App\Models\CustomOrder;
+use Illuminate\Support\Facades\Mail;
 use Livewire\Component;
 
 class CustomOrderComponent extends Component
@@ -42,7 +44,15 @@ class CustomOrderComponent extends Component
         $customorder->additional_info = $this->additional_info;
         $customorder->save();
         session()->flash('message', 'Custom Order Sent, Approval will be sent to you!');
+
+        $this->sendCustomOrderConfirmationMail($customorder);
     }
+
+    public function sendCustomOrderConfirmationMail($customorder)
+    {
+        Mail::to("princebensmith15@gmail.com")->send(new CustomOrderMail($customorder));
+    }
+ 
 
     public function render()
     {
