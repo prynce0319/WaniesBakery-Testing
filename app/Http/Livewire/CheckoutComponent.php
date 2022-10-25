@@ -158,7 +158,12 @@ class CheckoutComponent extends Component
 
         elseif ($this->paymentmode == 'momo')
         {
-            return redirect()->route("checkout.form");
+            $transaction = new Transaction();
+            $transaction -> user_id = Auth::user()->id;
+            $transaction -> order_id = $order->id;
+            $transaction -> mode = 'MobileMoney';
+            $transaction -> status = 'Pending';
+            $transaction -> save();
         }
 
         $this->thankyou = 1;
@@ -176,7 +181,7 @@ class CheckoutComponent extends Component
     {
         Mail::to($order->email)->send(new OrderMail($order));
     }
-
+ 
 
     public function verifyForCheckout()
     {
