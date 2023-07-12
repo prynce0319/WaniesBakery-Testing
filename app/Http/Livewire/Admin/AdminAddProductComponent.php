@@ -10,6 +10,7 @@ use Livewire\WithFileUploads;
 use Illuminate\Support\Carbon;
 use Livewire\Component;
 use Illuminate\Support\Str;
+use Illuminate\Support\Facades\Storage;
 
 class AdminAddProductComponent extends Component
 {
@@ -71,7 +72,7 @@ class AdminAddProductComponent extends Component
             'SKU' => 'required',
             'stock_status' => 'required',
             'quantity' => 'required|numeric',
-           
+            'image' => 'image|max:1024',
             'category_id' => 'required'
 
         ]);
@@ -89,7 +90,7 @@ class AdminAddProductComponent extends Component
             'SKU' => 'required',
             'stock_status' => 'required',
             'quantity' => 'required|numeric',
-         
+            'image' => 'image|max:1024',
             'category_id' => 'required'
 
         ]);
@@ -105,10 +106,12 @@ class AdminAddProductComponent extends Component
         $product->featured = $this->featured;
         $product->quantity = $this->quantity;
 
-
-        $imageName = Carbon::now()->timestamp. '.' . $this->image->extension();
-        $this->image->storeAs('products',$imageName);
+        $imageName = $this->image->store('assets/images/products', 'public');
         $product->image = $imageName;
+
+        /* $imageName = Carbon::now()->timestamp. '.' . $this->image->extension();
+        $this->image->storeAs('products',$imageName);
+        $product->image = $imageName; */
 
         if($this->images)
         {
