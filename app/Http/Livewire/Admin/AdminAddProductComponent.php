@@ -71,7 +71,7 @@ class AdminAddProductComponent extends Component
             'SKU' => 'required',
             'stock_status' => 'required',
             'quantity' => 'required|numeric',
-            'image' => 'required|mimes:jpeg,png',
+            'image' => 'required',
             'category_id' => 'required'
 
         ]);
