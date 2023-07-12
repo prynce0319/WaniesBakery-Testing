@@ -71,7 +71,7 @@ class AdminAddProductComponent extends Component
             'SKU' => 'required',
             'stock_status' => 'required',
             'quantity' => 'required|numeric',
-            'image' => 'required',
+            'image' => 'required|image|mimes:jpeg,png,jpg,gif|max:2048',
             'category_id' => 'required'
 
         ]);
@@ -89,7 +89,7 @@ class AdminAddProductComponent extends Component
             'SKU' => 'required',
             'stock_status' => 'required',
             'quantity' => 'required|numeric',
-            'image' => 'required|mimes:jpeg,png',
+            'image' => 'required|image|mimes:jpeg,png,jpg,gif|max:2048',
             'category_id' => 'required'
 
         ]);
@@ -107,8 +107,9 @@ class AdminAddProductComponent extends Component
 
         $uploadedFile = $this->image;
         $imageName = Carbon::now()->timestamp . '.' . $uploadedFile->getClientOriginalExtension();
-        $imagePath = $uploadedFile->storeAs('products', $imageName, 'public');
-        $product->image = $imagePath;
+        $uploadedFile->move(public_path('products'), $imageName);
+        /* $imagePath = $uploadedFile->storeAs('products', $imageName, 'public'); */
+        $product->image = $imageName;
 
 
         /* $imageName = Carbon::now()->timestamp. '.' . $this->image->extension();
