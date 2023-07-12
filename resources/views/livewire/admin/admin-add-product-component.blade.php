@@ -111,9 +111,9 @@
                                 <label class="col-md-4 control-label">Product Image</label>
                                 <div class="col-md-4">
                                     <input type="file" class="input-file" wire:model="image"  />
-                                    {{-- @if ($image)
+                                    @if ($image)
                                     <img src="{{ $image->temporaryUrl() }}" width="120" />
-                                    @endif --}}
+                                    @endif
                                     @error('image') <p class="text-danger">{{ $message }}</p> @enderror
                                 </div>
                             </div>
