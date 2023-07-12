@@ -107,7 +107,7 @@ class AdminAddProductComponent extends Component
 
         $uploadedFile = $this->image;
         $imageName = Carbon::now()->timestamp . '.' . $uploadedFile->getClientOriginalExtension();
-        $imagePath = $uploadedFile->storeAs('public/products', $imageName);
+        $imagePath = $uploadedFile->storeAs('products', $imageName, 'public');
         $product->image = $imagePath;
 
 
