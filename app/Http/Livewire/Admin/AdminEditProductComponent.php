@@ -136,7 +136,7 @@ class AdminEditProductComponent extends Component
         if($this->newimage)
         {
             $imageName = Carbon::now()->timestamp. '.' . $this->newimage->extension();
-            $this->newimage->storeAs('products',$imageName);
+            $this->newimage->storeAs('products',$imageName,'public');
             $product->image = $imageName;
         }
 
