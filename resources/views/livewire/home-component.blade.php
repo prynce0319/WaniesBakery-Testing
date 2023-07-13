@@ -62,6 +62,10 @@
                 </div>
             </div>
         @else
+
+             <!-- Code to handle when $sale is null or conditions are not met -->
+            <!-- For example, you can display a message or alternative content -->
+            <p>No active sale currently.</p>
         
         @endif
 

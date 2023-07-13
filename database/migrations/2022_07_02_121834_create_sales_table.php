@@ -18,8 +18,8 @@ return new class extends Migration
     {
         Schema::create('sales', function (Blueprint $table) {
             $table->id();
-            $table->dateTime('sale_date');
-            $table->boolean('status')->default("0")->nullable();
+            $table->dateTime('sale_date')->nullable();
+            $table->boolean('status')->nullable();
             $table->timestamps();
         });
     }

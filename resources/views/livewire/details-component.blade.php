@@ -26,16 +26,16 @@
                         <div class="product-gallery" wire:ignore>
                           <ul class="slides">
 
-                            <li data-thumb="{{asset('assets/images/products')}}/{{$product->image}}">
-                                <img src="{{asset('assets/images/products')}}/{{$product->image}}" alt="{{$product->name}}" />
+                            <li data-thumb="{{asset('/products')}}/{{$product->image}}">
+                                <img src="{{asset('/products')}}/{{$product->image}}" alt="{{$product->name}}" />
                             </li>
                             @php
                                 $images = explode(",",$product->images);
                             @endphp
                             @foreach ($images as $image)
                                 @if ($image)
-                                    <li data-thumb="{{asset('assets/images/products')}}/{{$image}}">
-                                        <img src="{{asset('assets/images/products')}}/{{$image}}" alt="{{$product->name}}" />
+                                    <li data-thumb="{{asset('/products')}}/{{$image}}">
+                                        <img src="{{asset('/products')}}/{{$image}}" alt="{{$product->name}}" />
                                     </li>
                                 @endif
                             @endforeach
@@ -297,7 +297,7 @@
                             <div class="product product-style-2 equal-elem ">
                                 <div class="product-thumnail">
                                     <a href="{{route('product.details',['slug'=>$r_products->slug])}}" title="{{$r_products->name}}" title="{{$r_products->name}}">
-                                        <figure><img src="{{asset('assets/images/products')}}/{{$r_products->image}}" width="214" height="214" alt="{{$r_products->name}}"></figure>
+                                        <figure><img src="{{asset('/products')}}/{{$r_products->image}}" width="214" height="214" alt="{{$r_products->name}}"></figure>
                                     </a>
                                     <div class="group-flash">
                                         <span class="flash-item new-label">new</span>
