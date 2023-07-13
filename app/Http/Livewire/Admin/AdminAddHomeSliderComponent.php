@@ -10,6 +10,7 @@ use livewire\WithFileUploads;
 class AdminAddHomeSliderComponent extends Component
 {
     use WithFileUploads;
+    
     public $title;
     public $subtitle;
     public $price;
