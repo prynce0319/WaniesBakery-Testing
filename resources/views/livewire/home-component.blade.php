@@ -6,7 +6,7 @@
             <div class="slide-carousel owl-carousel style-nav-1" data-items="1" data-loop="1" data-nav="true" data-dots="false">
                 @foreach ($sliders as $slide )
                     <div class="item-slide">
-                        <img src="{{ asset('assets/images/sliders') }}/{{ $slide->image }}" alt="" class="img-slide">
+                        <img src="{{ asset('/products') }}/{{ $slide->image }}" alt="" class="img-slide">
                         <div class="slide-info slide-1">
                             <h2 class="f-title"><b>{{ $slide->title }}</b></h2>
                             <span class="subtitle">{{ $slide->subtitle }}</span>
@@ -65,7 +65,7 @@
 
              <!-- Code to handle when $sale is null or conditions are not met -->
             <!-- For example, you can display a message or alternative content -->
-            <p>No active sale currently.</p>
+            <p></p>
         
         @endif
 
