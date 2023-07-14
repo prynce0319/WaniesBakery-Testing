@@ -5,7 +5,7 @@ namespace App\Http\Livewire\Admin;
 use App\Models\HomeSlider;
 use Carbon\Carbon;
 use Livewire\Component;
-use livewire\WithFileUploads;
+use Livewire\WithFileUploads;
 
 class AdminAddHomeSliderComponent extends Component
 {
@@ -31,7 +31,7 @@ class AdminAddHomeSliderComponent extends Component
         $slider->price = $this->price;
         $slider->link = $this->link;
         $imagename = Carbon::now()->timestamp. '.' . $this->image->extension();
-        $this->image->storeAs('products',$imagename);
+        $this->image->storeAs('products',$imagename,'public');
         $slider->image = $imagename;
         $slider->status = $this->status;
         $slider->save();

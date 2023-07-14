@@ -24,7 +24,7 @@
 
                     <li class="pr-cart-item">
                         <div class="product-image">
-                            <figure><img src="{{asset('assets/images/products') }}/{{ $item->model->image }}" alt="{{ $item->model->name }}"></figure>
+                            <figure><img src="{{asset('/products') }}/{{ $item->model->image }}" alt="{{ $item->model->name }}"></figure>
                         </div>
                         <div class="product-name">
                             <a class="link-to-product" href="{{ route('product.details',['slug'=>$item->model->slug]) }}">{{ $item->model->name }}</a>
