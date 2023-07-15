@@ -34,6 +34,7 @@
         </div>
         <div class="mercado-panels"></div>
     </div>
+	
 
 	<!--header-->
 	<header id="header" class="header header-style-1">
@@ -167,7 +168,7 @@
 					<div class="mid-section main-info-area">
 
 						<div class="wrap-logo-top left-section">
-							<a href="/" class="link-to-home"><img src="{{asset('assets/images/wanies-logo.png')}}" alt="mercado"></a>
+							<a href="/" class="link-to-home"><img src="{{asset('assets/images/wanies-logo.png')}}" width="150px" height="150px" alt="mercado"></a>
 						</div>
 
 						@livewire("header-search-component")
@@ -178,6 +179,7 @@
 							@livewire('cart-count-component')
 
 							<div class="wrap-icon-section show-up-after-1024">
+								
 								<a href="#" class="mobile-navigation">
 									<span></span>
 									<span></span>
@@ -187,6 +189,7 @@
 						</div>
 
 					</div>
+					
 				</div>
 
 				{{-- <div class="nav-section header-sticky">

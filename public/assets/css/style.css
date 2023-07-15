@@ -1001,6 +1001,8 @@ li.menu-item .nav-label.sale-label::before{
 .wrap-main-slide .item-slide .img-slide,
 .wrap-main-slide .item-slide{
     min-height: 190px;
+    display: flex;
+    justify-content: flex-start;
 }
 .wrap-main-slide .slide-carousel .slide-info{
     position: absolute;
@@ -4280,6 +4282,8 @@ article.single-post blockquote p:last-child::after{
 .flex-control-thumbs .owl-item{
     float: left;
 }
+
+
 .flex-control-thumbs{
     margin: 10px 0 0;
     overflow: hidden;

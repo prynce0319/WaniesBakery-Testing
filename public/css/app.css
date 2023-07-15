@@ -486,6 +486,8 @@ select {
   border-radius: 100%;
 }
 
+
+
 [type='checkbox']:focus,[type='radio']:focus {
   outline: 2px solid transparent;
   outline-offset: 2px;
