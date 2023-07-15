@@ -72,7 +72,7 @@
                         <p class="summary-info total-info "><span class="title">Total</span><b class="index">₵{{ number_format($totalAfterDiscount,2) }}</b></p>
                     @else
                         <p class="summary-info"><span class="title">Tax</span><b class="index">₵ {{ Cart::instance('cart')->tax() }}</b></p>
-                        <p class="summary-info"><span class="title">Delivery</span><b class="index">Free Shipping</b></p>
+                        <p class="summary-info"><span class="title">Delivery</span><b class="index">Customer pays delivery</b></p>
                         <p class="summary-info total-info "><span class="title">Total</span><b class="index">₵ {{ Cart::instance('cart')->total() }}</b></p>
                     @endif
                 </div>
